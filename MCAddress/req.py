@@ -211,7 +211,7 @@ jsonData=[
 count=10
 heatmapData=[]
 for addr in jsonData:
-      url="http://restapi.amap.com/v3/geocode/geo?key=fe9184c9e04a02359ffcd744b3795a60&address="+addr["address"]
+      url="http://restapi.amap.com/v3/geocode/geo?key=yourKey&address="+addr["address"]
       res=requests.get(url)
       data=json.loads(res.text)
       try:
