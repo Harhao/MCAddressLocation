@@ -231,5 +231,5 @@ for addr in jsonData:
             pass
 print(json.dumps(heatmapData))
 with open("heatmapData.txt","wr+") as f:
-      f.write(heapmapData)
+      f.write(str(heapmapData))
       
